@@ -1,4 +1,6 @@
-<?session_start();?>
+<?session_start();
+$head='Login';
+?>
 
 <?php if(isset($_SESSION['username']) && isset($_SESSION['password']) ):?>
 <?php  echo "<script> location.href='../'; </script>"; 
@@ -24,6 +26,15 @@
                             <a href="#">
                                 <img src="images/icon/logo.png" alt="CoolAdmin">
                             </a>
+                        </div>
+                        <div>
+                        <?php if(isset($_GET['error'])){
+                            $error = $_GET['error'];
+                            echo '<div class="alert alert-danger">'.$error.'</div>';
+                        }
+                        ?>
+                        
+
                         </div>
                         <div class="login-form">
                             <form action="login.php" method="post">

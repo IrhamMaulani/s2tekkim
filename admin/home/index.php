@@ -24,6 +24,7 @@
             <!-- HEADER DESKTOP-->
             <header class="header-desktop">
             <?php require_once('../layout/header-desktop.php');?>   
+            <?php require_once('../layout/js.php');?>
             </header>
             <!-- HEADER DESKTOP-->
 
@@ -47,7 +48,7 @@
 
     </div>
 
-   <?php require_once('../layout/js.php');?>
+   
 
 </body>
 

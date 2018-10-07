@@ -22,14 +22,7 @@
     <!-- Main JS-->
     <script src="../assets/js/main.js"></script>
 
-              <script>
-
-    $('#log').click(function() {
-    $('#out').submit();
-    });
-
-
-</script>
+ <script src="../assets/js/login.js"></script>
 
 
          
