@@ -27,12 +27,8 @@ $head='Login';
                                 <img src="images/icon/logo.png" alt="CoolAdmin">
                             </a>
                         </div>
-                        <div>
-                        <?php if(isset($_GET['error'])){
-                            $error = $_GET['error'];
-                            echo '<div class="alert alert-danger">'.$error.'</div>';
-                        }
-                        ?>
+                        <div id="pesanLogin">
+                       
                         
 
                         </div>

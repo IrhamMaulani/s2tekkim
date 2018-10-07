@@ -30,18 +30,18 @@ if(isset($_POST['username']) && isset($_POST['password']) ){
          exit; 
 
     }
-    else{
-
-    /* echo '<script>
+    else{ ?>
+    <script>
+      $("#pesanLogin").append("<div class='alert alert-danger'> UserName dan Password Salah </div>");
+      </script>
+    <?php }?>
     
-   
-    $("#pesanLogin").html("Password Error");
-    </script>'; */
-    header('location: login.php?error=User Name and Password do not Match!');
-     exit();
-
-    }
-}
+<?php }?>
 
 
-?>
+
+
+
+
+
+
