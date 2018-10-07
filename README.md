@@ -1,1 +1,0 @@
-# Web Profile S2 Teknik Kimia Universitas Lambung Mangkurat.

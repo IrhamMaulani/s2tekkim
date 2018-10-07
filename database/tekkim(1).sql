@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2018 at 05:48 AM
+-- Generation Time: Oct 07, 2018 at 08:45 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -57,6 +57,18 @@ CREATE TABLE `articles` (
 CREATE TABLE `jabatans` (
   `id` int(11) NOT NULL,
   `jabatan` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `lainlains`
+--
+
+CREATE TABLE `lainlains` (
+  `id` int(11) NOT NULL,
+  `visimisi` text NOT NULL,
+  `tentangkami` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -119,6 +131,12 @@ ALTER TABLE `jabatans`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `lainlains`
+--
+ALTER TABLE `lainlains`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `peminatans`
 --
 ALTER TABLE `peminatans`
@@ -154,6 +172,11 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT for table `jabatans`
 --
 ALTER TABLE `jabatans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `lainlains`
+--
+ALTER TABLE `lainlains`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `peminatans`
