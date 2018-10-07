@@ -1,5 +1,5 @@
 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+                   <div class="container-fluid">
                         <div class="header-wrap">
                             <div class="header-button">
                                 <div class="account-wrap">
@@ -8,7 +8,9 @@
                                             <img src="../assets/images/icon/avatar-01.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                        
+                                            <a class="js-acc-btn" href="#"><?php echo $_SESSION['username'];?></a>
+                                        
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
@@ -39,8 +41,11 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="#">
+                                                <a href="#" id="log">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
+                                                    <form id="out" method="post" action="../login/logout.php">
+                                                        <input type="hidden" name="logout">
+                                                            </form>
                                             </div>
                                         </div>
                                     </div>
@@ -49,3 +54,6 @@
                         </div>
                     </div>
                 </div>
+               
+
+      

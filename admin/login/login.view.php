@@ -1,8 +1,17 @@
+<?session_start();?>
+
+<?php if(isset($_SESSION['username']) && isset($_SESSION['password']) ):?>
+<?php  echo "<script> location.href='../'; </script>"; 
+         exit; ?>
+         <?else:?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php require_once('../layout/head.php');?>
+    
+    
 </head>
 
 <body class="animsition">
@@ -17,7 +26,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form action="login.php" method="post">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input class="au-input au-input--full" type="text" name="username" placeholder="Username">
@@ -46,4 +55,6 @@
    <?php require_once('../layout/js.php');?>
 </body>
 </html>
+
+<?php endif?>
 <!-- end document-->

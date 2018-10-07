@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php require_once('../layout/head.php');?>
+    <?php require('../layout/head.php');?>
 </head>
 
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
-        <?php require_once('../layout/header-mobile.php');?>
+        <?php require('../layout/header-mobile.php');?>
         <!-- END HEADER MOBILE-->
 
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
-        <?php require_once('../layout/sidebar.php');?>
+        <?php require('../layout/sidebar.php');?>
         </aside>
         <!-- END MENU SIDEBAR-->
 
@@ -21,7 +22,7 @@
         <div class="page-container">
             <!-- HEADER DESKTOP-->
             <header class="header-desktop">
-            <?php require_once('../layout/header-desktop.php');?>   
+            <?php require('../layout/header-desktop.php');?>   
             </header>
             <!-- HEADER DESKTOP-->
 
