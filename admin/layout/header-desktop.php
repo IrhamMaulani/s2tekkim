@@ -9,7 +9,11 @@
                                         </div>
                                         <div class="content">
                                         
+<<<<<<< HEAD
                                             <a class="js-acc-btn" href="#"><?php echo $_SESSION['username'];?></a>
+=======
+                                            <a class="js-acc-btn" href="#"><?php echo $_SESSION['username']; ?></a>
+>>>>>>> 5309a52e1fcb6ea996c533354a039c34370b7049
                                         
                                         </div>
                                         <div class="account-dropdown js-dropdown">
@@ -21,7 +25,7 @@
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">john doe</a>
+                                                        <a href="#"><?php echo $_SESSION['username']; ?></a>
                                                     </h5>
                                                     <span class="email">johndoe@example.com</span>
                                                 </div>

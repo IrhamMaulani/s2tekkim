@@ -27,11 +27,19 @@ $head='Login';
                                 <img src="../assets/images/icon/logo.png" alt="CoolAdmin">
                             </a>
                         </div>
+<<<<<<< HEAD:admin/login/login.view.php
                         <div id="pesanLogin">
                        
                         
 
                         </div>
+=======
+                        <?php if(isset($_GET['pesan'])){
+                            $pesan = $_GET['pesan'];
+                            echo '<div class="alert alert-danger"><strong>'.$pesan.'</strong></div>';
+                        }
+                        ?>
+>>>>>>> 5309a52e1fcb6ea996c533354a039c34370b7049:admin/login/index.php
                         <div class="login-form">
                             <form action="login.php" method="post">
                                 <div class="form-group">
@@ -54,7 +62,6 @@ $head='Login';
                 </div>
             </div>
         </div>
-
     </div>
 
     
@@ -63,5 +70,8 @@ $head='Login';
 </body>
 </html>
 
+<<<<<<< HEAD:admin/login/login.view.php
 <?php endif?>
+=======
+>>>>>>> 5309a52e1fcb6ea996c533354a039c34370b7049:admin/login/index.php
 <!-- end document-->

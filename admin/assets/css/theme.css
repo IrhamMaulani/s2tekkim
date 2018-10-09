@@ -1225,6 +1225,7 @@ section {
 }
 
 .header-wrap {
+    float:right;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

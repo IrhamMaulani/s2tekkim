@@ -1,3 +1,5 @@
+<?php session_start();?>
+<?php if(isset($_SESSION['username'])): ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,3 +83,8 @@
 
 </html>
 <!-- end document-->
+
+
+<?php else: ?>
+<?php header ('location: ../login ')?>
+<?php endif ?>

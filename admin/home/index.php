@@ -1,4 +1,8 @@
 <?php session_start();?>
+<<<<<<< HEAD
+=======
+<?php if(isset($_SESSION['username'])): ?>
+>>>>>>> 5309a52e1fcb6ea996c533354a039c34370b7049
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,3 +58,7 @@
 
 </html>
 <!-- end document-->
+
+<?php else: ?>
+<?php header ('location: ../login ')?>
+<?php endif ?>
